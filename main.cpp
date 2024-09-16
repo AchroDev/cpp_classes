@@ -11,16 +11,18 @@ public:
     int x, y;
     // int speed for storing player speed
     int speed;
-};
-
-// Move function using a reference of the Player class
-void Move(Player& player, int xa, int ya)
+    
+// Move method using a reference of the Player class
+void Move(int xa, int ya)
 {
     // Updates the players x variable relative to the speed
-    player.x += xa * player.speed;
+    x += xa * speed;
     // Updates the players y variable relative to the speed
-    player.y += ya * player.speed;
+    y += ya * speed;
 }
+};
+
+
 
 int main()
 {
@@ -29,7 +31,7 @@ int main()
     player.y = 6; // setting a value for the 'y' variable
     player.speed = 1; // setting a value for the 'speed' variable
     
-    Move(player, 1, -1); // move the player +1 x and -1 y
+    player.Move(1, -1); // move the player +1 x and -1 y
     
     LOG("This is going to be about classes!");
     std::cin.get();
