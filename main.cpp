@@ -2,11 +2,9 @@
 
 #define LOG(x) std::cout << x << std::endl;
 
-// Class with the name of 'Player'
-class Player
+// Struct with the name of 'Player', default public vs default private with a class
+struct Player
 {
-// defines the data in the class as public so objects outside of the class can read them.
-public:
     // int x and y for storing player position
     int x, y;
     // int speed for storing player speed
@@ -33,6 +31,7 @@ int main()
     
     player.Move(1, -1); // move the player +1 x and -1 y
     
-    LOG("This is going to be about classes!");
+    LOG(player.x); // displays 6 in the console
+    LOG(player.y); // displays 5 in the console
     std::cin.get();
 }
