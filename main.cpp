@@ -9,8 +9,6 @@
 // Struct with the name of 'Player', default public vs default private with a class
 struct Player
 {
-// can make this explicitly private like a class
-private:
     // int x and y for storing player position
     int x, y;
     // int speed for storing player speed
@@ -25,7 +23,6 @@ void Move(int xa, int ya)
     y += ya * speed;
 }
 };
-
 
 
 int main()
