@@ -2,6 +2,10 @@
 
 #define LOG(x) std::cout << x << std::endl;
 
+// #define struct class
+// #define class struct
+// could use either of the above to remap and "make" public or private by default
+
 // Struct with the name of 'Player', default public vs default private with a class
 struct Player
 {
